@@ -1,0 +1,5 @@
+package nng;
+
+interface IDialer {
+	
+}
