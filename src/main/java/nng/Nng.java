@@ -1,12 +1,10 @@
 package nng;
 
-import com.sun.jna.Native;
-import com.sun.jna.Memory;
 import com.sun.jna.Pointer;
 import com.sun.jna.ptr.IntByReference;
 
-import nng.exceptions.EAgainException;
-import nng.exceptions.IOException;
+import nng.exception.AgainException;
+import nng.exception.NngException;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,20 +15,20 @@ public final class Nng {
   /* Low level native interface wrapper */
 
   public static final int getErrorNumber() {
-    return NngNativeLibrary.nng_errno();
+    return INngLibrary.nng_errno();
   }
 
   public static final String getError() {
     final int currentError = Nng.getErrorNumber();
-    return NngNativeLibrary.nng_strerror(currentError);
+    return INngLibrary.nng_strerror(currentError);
   }
 
-  public static void handleError(int rc) {
+  public static void handleError(int rc) throws Exception {
     final int errno = getErrorNumber();
     final String msg = getError();
 
     if (errno == Error.EAGAIN.value()) {
-      throw new EAgainException(msg, errno);
+      throw new AgainException(msg, errno);
     } else {
       throw new NngException(msg, errno);
     }
@@ -39,7 +37,7 @@ public final class Nng {
 
 
   public static final void terminate() {
-    NngNativeLibrary.nng_term();
+    INngLibrary.nng_term();
   }
 
   private static final Map<String, Integer> getSymbols() {
@@ -48,7 +46,7 @@ public final class Nng {
     int index = 0;
     while (true) {
       IntByReference valueRef = new IntByReference();
-      Pointer ptr = NngNativeLibrary.nng_symbol(index, valueRef);
+      Pointer ptr = INngLibrary.nng_symbol(index, valueRef);
 
       if (ptr == null) {
         break;

@@ -1,9 +1,12 @@
 package nng.exception;
 
-public class NngException extends Throwable {
+public class NngException extends Exception {
+	final String msg;
+	final int errno;
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+	public NngException(final String msg, final int errno) {
+		super();
+		this.msg = msg;
+		this.errno = errno;
+	}
 }

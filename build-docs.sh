@@ -5,16 +5,16 @@ VERSION="latest"
 lein doc
 lein javadoc
 
-rm -rf /tmp/nanomsg-doc/
-mkdir -p /tmp/nanomsg-doc/
+rm -rf /tmp/nng-doc/
+mkdir -p /tmp/nng-doc/
 
-mv doc/index.html /tmp/nanomsg-doc/
-mv doc/api /tmp/nanomsg-doc/
+mv doc/index.html /tmp/nng-doc/
+mv doc/api /tmp/nng-doc/
 
 git checkout gh-pages;
 
 rm -rf ./$VERSION
-mv /tmp/nanomsg-doc/ ./$VERSION
+mv /tmp/nng-doc/ ./$VERSION
 
 git add --all ./$VERSION
 git commit -a -m "Update ${VERSION} doc"
