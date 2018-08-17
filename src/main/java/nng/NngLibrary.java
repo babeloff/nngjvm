@@ -71,7 +71,7 @@ public class NngLibrary {
 		public static IntValuedEnum<nng_pipe_ev > fromValue(int value) {
 			return FlagSet.fromValue(value, values());
 		}
-	};
+	}
 	/**
 	 * Flags.<br>
 	 * enum values<br>
