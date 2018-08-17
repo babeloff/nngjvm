@@ -1,6 +1,24 @@
-"-f" "-beautifyNames" "-v"
-                                    "sample/Test.h"
-                                    "-library" "nng"
-                                    "-o" "target"
-                                    "-mode" "Directory"
-                                    "-arch" "linux_x64"
+-f
+-beautifyNames
+-v
+-direct
+-skipDeprecated
+../../nng/src/nng.h
+../../nng/src/protocol/bus0/bus.h
+../../nng/src/protocol/pair0/pair.h
+../../nng/src/protocol/pair1/pair.h
+../../nng/src/protocol/pipeline0/pull.h
+../../nng/src/protocol/pipeline0/push.h
+../../nng/src/protocol/pubsub0/pub.h
+../../nng/src/protocol/pubsub0/sub.h
+../../nng/src/protocol/reqrep0/rep.h
+../../nng/src/protocol/reqrep0/req.h
+../../nng/src/protocol/survey0/respond.h
+../../nng/src/protocol/survey0/survey.h
+-I /home/fred/github/nng/src/
+-library nng
+-o ../src/main/java
+-mode Directory
+// -runtime JNA
+-runtime BridJ
+-arch linux_x64

@@ -2,10 +2,10 @@
 plugins {
     `kotlin-dsl`
     `java-library`
-    `eclipse`
-    `idea`
+    eclipse
+    idea
     `maven-publish`
-    `signing`
+    signing
 }
 
 group = "babeloff"
@@ -41,10 +41,10 @@ publishing {
     }
     repositories {
         maven  {
-            var releasesRepoUrl = uri("$buildDir/repos/releases")
-            var snapshotsRepoUrl = uri("$buildDir/repos/snapshots")
+            val releasesRepoUrl = uri("$buildDir/repos/releases")
+            val snapshotsRepoUrl = uri("$buildDir/repos/snapshots")
             url = if (version.toString().endsWith("SNAPSHOT",true))
-                    snapshotsRepoUrl; else releasesRepoUrl;
+                    snapshotsRepoUrl else releasesRepoUrl
         }
     }
 }
@@ -54,6 +54,7 @@ dependencies {
     // https://mvnrepository.com/artifact/net.java.dev.jna/jna
     compileOnly ("net.java.dev.jna:jna:4.5.2")
     compileOnly ("com.nativelibs4java:bridj:0.7.0")
+    compileOnly ("com.nativelibs4java:jnaerator-runtime:0.12")
 
     // Use JUnit test framework
     testImplementation("junit:junit:4.12")

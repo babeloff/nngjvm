@@ -71,7 +71,7 @@ public class NngLibrary {
 		public static IntValuedEnum<nng_pipe_ev > fromValue(int value) {
 			return FlagSet.fromValue(value, values());
 		}
-	}
+	};
 	/**
 	 * Flags.<br>
 	 * enum values<br>
@@ -119,7 +119,7 @@ public class NngLibrary {
 		public static IntValuedEnum<nng_stat_type_enum > fromValue(int value) {
 			return FlagSet.fromValue(value, values());
 		}
-	}
+	};
 	/**
 	 * NNG_DECL int nng_stat_unit(nng_stat *);<br>
 	 * enum values<br>

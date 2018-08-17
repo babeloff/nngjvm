@@ -1,14 +1,7 @@
 
 (import com.ochafik.lang.jnaerator.JNAerator)
-(import com.ochafik.lang.jnaerator.JNAeratorConfig)
 
-;;
-
-(defn jnaerate
-      [& args]
-      (JNAerator/main (into-array String args)))
-
-(jnaerate "-help")
+(defn jnaerate [& args] (JNAerator/main (into-array String args)))
 
 (jnaerate "-f" "-beautifyNames" "-v"
           "sample/Test.h"
