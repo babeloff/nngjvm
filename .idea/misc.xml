@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../jnaerator/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../jnaerator/anarres/pom.xml" />
+        <option value="$PROJECT_DIR$/../jnaerator/jnaerator-parser/pom.xml" />
+        <option value="$PROJECT_DIR$/../jnaerator/jnaerator-rococoa-runtime/pom.xml" />
+        <option value="$PROJECT_DIR$/../jnaerator/jnaerator-runtime/pom.xml" />
+        <option value="$PROJECT_DIR$/../jnaerator/jnaerator/pom.xml" />
+        <option value="$PROJECT_DIR$/../jnaerator/maven-jnaerator-plugin/pom.xml" />
+        <option value="$PROJECT_DIR$/../jnaerator/ochafik-swing/pom.xml" />
+        <option value="$PROJECT_DIR$/../jnaerator/ochafik-util/pom.xml" />
+        <option value="$PROJECT_DIR$/../jnaerator/pom.xml" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="10" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/classes" />
   </component>

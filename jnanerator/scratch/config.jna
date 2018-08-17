@@ -1,0 +1,6 @@
+"-f" "-beautifyNames" "-v"
+                                    "sample/Test.h"
+                                    "-library" "nng"
+                                    "-o" "target"
+                                    "-mode" "Directory"
+                                    "-arch" "linux_x64"

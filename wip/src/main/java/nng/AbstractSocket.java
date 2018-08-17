@@ -33,7 +33,7 @@ public class AbstractSocket implements ISocket {
   protected boolean open = false;
 
   public AbstractSocket(final Domain domain, final SocketType protocol) {
-    this.fd = nn_socket(domain.value(), protocol.value());
+    this.fd = nng_socket(domain.value(), protocol.value());
     this.open = true;
 
     this.setSocketOpt(SocketOption.NN_SNDTIMEO, 600);

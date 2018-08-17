@@ -3,3 +3,7 @@
 .gradle//*.lock
 .gradle//*.bin
 .classpath
+.idea/
+.settings/
+.gradle/
+build/

@@ -3,6 +3,7 @@ plugins {
     `kotlin-dsl`
     `java-library`
     `eclipse`
+    `idea`
 }
 
 java {
@@ -13,6 +14,7 @@ java {
 dependencies {
     // https://mvnrepository.com/artifact/net.java.dev.jna/jna
     compileOnly ("net.java.dev.jna:jna:4.5.2")
+    compileOnly ("com.nativelibs4java:bridj:0.7.0")
 
     // Use JUnit test framework
     testImplementation("junit:junit:4.12")

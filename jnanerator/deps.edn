@@ -3,7 +3,7 @@
 {
   :deps {
           org.clojure/tools.deps.alpha {:mvn/version "0.5.442"}
-          com.nativelibs4java/jnaerator {:mvn/version "0.12"}
+          com.nativelibs4java/jnaerator {:mvn/version "0.13-SNAPSHOT"}
           net.java.dev.jna/jna {:mvn/version "4.5.2"}
           net.java.dev.jna/jna-platform {:mvn/version "4.5.2"} }
 }
