@@ -1,5 +1,5 @@
 package nng.tlsapi;
-import nng.nng.nng_sockaddr;
+import nng.core.nng_sockaddr;
 import org.bridj.BridJ;
 import org.bridj.CRuntime;
 import org.bridj.Pointer;

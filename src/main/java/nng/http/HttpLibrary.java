@@ -1,13 +1,13 @@
 package nng.http;
 import java.util.Collections;
 import java.util.Iterator;
+import nng.core.nng_url;
 import nng.httpapi.HttpApiLibrary.nng_http_client;
 import nng.httpapi.HttpApiLibrary.nng_http_conn;
 import nng.httpapi.HttpApiLibrary.nng_http_handler;
 import nng.httpapi.HttpApiLibrary.nng_http_req;
 import nng.httpapi.HttpApiLibrary.nng_http_res;
 import nng.httpapi.HttpApiLibrary.nng_http_server;
-import nng.nng.nng_url;
 import nng.tlsapi.TlsApiLibrary.nng_aio;
 import nng.tlsapi.TlsApiLibrary.nng_tls_config;
 import org.bridj.BridJ;

@@ -1,6 +1,6 @@
 package nng.httpapi;
-import nng.nng.nng_sockaddr;
-import nng.nng.nng_url;
+import nng.core.nng_sockaddr;
+import nng.core.nng_url;
 import nng.tlsapi.TlsApiLibrary.nng_aio;
 import nng.tlsapi.TlsApiLibrary.nng_tls_config;
 import nng.tlsapi.TlsApiLibrary.nni_tcp_conn;

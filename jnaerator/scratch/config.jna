@@ -10,7 +10,7 @@
 -runtime BridJ
 -arch linux_x64
 -rootPackage nng
--library nng
+-library core
 ../../nng/src/nng.h
 -library bus0
 ../../nng/src/protocol/bus0/bus.h

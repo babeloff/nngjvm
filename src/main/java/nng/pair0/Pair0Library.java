@@ -1,5 +1,5 @@
 package nng.pair0;
-import nng.nng.nng_socket_s;
+import nng.core.nng_socket_s;
 import org.bridj.BridJ;
 import org.bridj.CRuntime;
 import org.bridj.Pointer;

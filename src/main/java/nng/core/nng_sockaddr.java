@@ -1,4 +1,4 @@
-package nng.nng;
+package nng.core;
 import org.bridj.BridJ;
 import org.bridj.Pointer;
 import org.bridj.StructObject;
@@ -12,7 +12,7 @@ import org.bridj.ann.Union;
  * For help, please visit <a href="https://github.com/nativelibs4java">NativeLibs4Java</a> or <a href="http://bridj.googlecode.com/">BridJ</a> .
  */
 @Union 
-@Library("nng") 
+@Library("core") 
 public class nng_sockaddr extends StructObject {
 	static {
 		BridJ.register();
