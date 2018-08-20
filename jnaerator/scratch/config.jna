@@ -1,0 +1,67 @@
+-f
+-beautifyNames
+-v
+-direct
+-skipDeprecated
+-I /home/fred/github/nng/src/
+-o ../src/main/java
+-mode Directory
+// -runtime JNA
+-runtime BridJ
+-arch linux_x64
+-rootPackage nng
+-library nng
+../../nng/src/nng.h
+-library bus0
+../../nng/src/protocol/bus0/bus.h
+-library pair0
+../../nng/src/protocol/pair0/pair.h
+-library pair1
+../../nng/src/protocol/pair1/pair.h
+-library pipelinePull
+../../nng/src/protocol/pipeline0/pull.h
+-library pipelinePush
+../../nng/src/protocol/pipeline0/push.h
+-library pub
+../../nng/src/protocol/pubsub0/pub.h
+-library sub
+../../nng/src/protocol/pubsub0/sub.h
+-library rep
+../../nng/src/protocol/reqrep0/rep.h
+-library req
+../../nng/src/protocol/reqrep0/req.h
+-library respond
+../../nng/src/protocol/survey0/respond.h
+-library survey
+../../nng/src/protocol/survey0/survey.h
+-library http
+../../nng/src/supplemental/http/http.h
+-library httpApi
+../../nng/src/supplemental/http/http_api.h
+-library sha1
+../../nng/src/supplemental/sha1/sha1.h
+-library tlsSup
+../../nng/src/supplemental/tls/tls.h
+-library tlsApi
+../../nng/src/supplemental/tls/tls_api.h
+-library base64
+../../nng/src/supplemental/base64/base64.h
+-library options
+../../nng/src/supplemental/util/options.h
+-library platform
+../../nng/src/supplemental/util/platform.h
+-library websocketSup
+../../nng/src/supplemental/websocket/websocket.h
+-library inproc
+../../nng/src/transport/inproc/inproc.h
+-library ipc
+../../nng/src/transport/ipc/ipc.h
+-library tcp
+../../nng/src/transport/tcp/tcp.h
+-library tls
+../../nng/src/transport/tls/tls.h
+-library websocket
+../../nng/src/transport/ws/websocket.h
+-library zerotier
+../../nng/src/transport/zerotier/zerotier.h
+-o ../src/main/java
