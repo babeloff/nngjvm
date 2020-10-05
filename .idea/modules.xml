@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/babeloff.nngjvm.iml" filepath="$PROJECT_DIR$/.idea/modules/babeloff.nngjvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/babeloff.nngjvm.main.iml" filepath="$PROJECT_DIR$/.idea/modules/babeloff.nngjvm.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/babeloff.nngjvm.test.iml" filepath="$PROJECT_DIR$/.idea/modules/babeloff.nngjvm.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/../jnaerator/jnaerator-maven-plugin/jnearator-maven-plugin.iml" filepath="$PROJECT_DIR$/../jnaerator/jnaerator-maven-plugin/jnearator-maven-plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/nngjvm.iml" filepath="$PROJECT_DIR$/nngjvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/nngjvm_main.iml" filepath="$PROJECT_DIR$/.idea/modules/nngjvm_main.iml" group="nngjvm" />

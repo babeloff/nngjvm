@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="jnearator-maven-plugin" />
-      </profile>
-    </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="anarres-jnaerator" target="1.5" />
+      <module name="babeloff.nngjvm" target="1.8" />
+      <module name="babeloff.nngjvm.main" target="1.8" />
+      <module name="babeloff.nngjvm.test" target="1.8" />
       <module name="jnaerator" target="1.5" />
       <module name="jnaerator-parent" target="1.5" />
       <module name="jnaerator-parser" target="1.5" />
